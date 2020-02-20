@@ -16,6 +16,6 @@ if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
 pushd "%CD%"
 CD /D "%~dp0"
 
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy remotesigned -File src/workhorse.ps1
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy unrestricted -File src/workhorse.ps1
 
 pause
